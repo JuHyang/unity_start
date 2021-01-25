@@ -11,7 +11,7 @@ public class LifeCycle : MonoBehaviour {
     }
 
     private void Update() {
-        Vector3 vec = new Vector3(0, 0.01f, 0);
+        Vector3 vec = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
         transform.Translate(vec);
     }
 }
