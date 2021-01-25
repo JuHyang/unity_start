@@ -9,16 +9,16 @@ public class LifeCycle : MonoBehaviour {
             Debug.Log("플레이어가 아무 키를 눌렀습니다.");
         }
 
-        if (Input.GetMouseButtonDown(0)) { // 0은 좌클릭, 1은 우클릭
-            Debug.Log("미사일 발사!");
+        if (Input.GetButtonDown("Jump")) { 
+            Debug.Log("점프!");
         }
 
-        if (Input.GetMouseButton(0)) {
-            Debug.Log("미사일 모으는 중 ...");
+        if (Input.GetButton("Jump")) {
+            Debug.Log("점프 모으는 중 ...");
         }
 
-        if (Input.GetMouseButtonUp(0)) {
-            Debug.Log("슈퍼 미사일 발사 !!");
+        if (Input.GetButtonUp("Jump")) {
+            Debug.Log("슈퍼 점프 !!");
         }
     }
 }
