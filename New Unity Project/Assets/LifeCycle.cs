@@ -9,16 +9,16 @@ public class LifeCycle : MonoBehaviour {
             Debug.Log("플레이어가 아무 키를 눌렀습니다.");
         }
 
-        if (Input.GetKeyDown(KeyCode.Return)) {
-            Debug.Log("아이템을 구입하였습니다.");
+        if (Input.GetMouseButtonDown(0)) { // 0은 좌클릭, 1은 우클릭
+            Debug.Log("미사일 발사!");
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow)) {
-            Debug.Log("왼쪽으로 이동 중");
+        if (Input.GetMouseButton(0)) {
+            Debug.Log("미사일 모으는 중 ...");
         }
 
-        if (Input.GetKeyUp(KeyCode.RightArrow)) {
-            Debug.Log("오른쪽 이동을 멈추었습니다.");
+        if (Input.GetMouseButtonUp(0)) {
+            Debug.Log("슈퍼 미사일 발사 !!");
         }
     }
 }
