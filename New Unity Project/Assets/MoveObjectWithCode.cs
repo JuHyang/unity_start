@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveObjectWithCode : MonoBehaviour
 {
-    ector3 target = new Vector3(8, 1.5f, 0);
+    Vector3 target = new Vector3(8, 1.5f, 0);
 
     private void Update() {
         // 1. MoveTowards
@@ -20,6 +20,5 @@ public class MoveObjectWithCode : MonoBehaviour
 
         // 4. SLerp (구면 선형 보간)
         transform.position = Vector3.Slerp(transform.position, target, 0.05f);
-
     }
 }
